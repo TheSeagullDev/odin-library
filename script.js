@@ -13,6 +13,7 @@ Book.prototype.toggleRead = function() {
 
 function addBookToLibrary(title, author, pages, read) {
     myLibrary.push(new Book(title, author, pages, read));
+    displayBooks(myLibrary);
 }
 
 function displayBooks(lib) {
@@ -51,8 +52,24 @@ function displayBooks(lib) {
     });
 }
 
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, false);
-addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 9999, true);
+const addBook = document.getElementById("add-book");
+const close = document.getElementById("close");
+const sumbit = document.getElementById("submit");
+const formContainer = document.querySelector("dialog");
+const form = document.querySelector("form");
 
+addBook.addEventListener("click", () => {
+    formContainer.showModal();
+});
+
+close.addEventListener("click", () => {
+    formContainer.close();
+});
+
+form.addEventListener("submit", () => {
+    addBookToLibrary(form.title.value, form.author.value, form.pages.value, form.read.checked);
+    form.reset();
+});
 
 displayBooks(myLibrary);
+

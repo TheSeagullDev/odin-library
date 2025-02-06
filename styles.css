@@ -1,8 +1,15 @@
+body {
+    display: flex;
+    margin: 0 10%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .content {
     display: grid;
     gap: 10px;
-    padding: 5% 10%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 .container {
@@ -24,4 +31,42 @@
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+}
+
+button {
+    background-color: #f3f1ff;
+    border: none;
+    padding: 10px 40px;
+    font-size: 24px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+button:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #d3cef3;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+}
+
+form input[type="checkbox"] {
+    justify-self: start;
+    align-self: center;
+    height: 100%;
+    width: 16px;
+    margin-left: 0;
+}
+
+form input[value="Close"] {
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
