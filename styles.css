@@ -1,0 +1,27 @@
+.content {
+    display: grid;
+    gap: 10px;
+    padding: 5% 10%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    background-color: #f3f1ff;
+    font-family: Helvetica;
+    padding: 30px;
+    font-size: 28px;
+}
+
+.property input {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.property {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
