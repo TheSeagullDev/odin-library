@@ -21,7 +21,7 @@ function displayBooks(lib) {
     while(content.firstChild) {
         content.removeChild(content.lastChild);
     }
-    lib.forEach((book) => {
+    lib.forEach((book, i) => {
         const container = document.createElement("div");
         container.classList.add("container");
         content.appendChild(container);
@@ -49,6 +49,15 @@ function displayBooks(lib) {
                 container.appendChild(prop);
             }
         }
+        const del = document.createElement("input");
+        del.type = "button";
+        del.value = "Delete book";
+        container.classList.add(i);
+        del.addEventListener("click", function(element) {
+            myLibrary.splice(this.classList[0], 1);
+            displayBooks(myLibrary);
+        });
+        container.appendChild(del);
     });
 }
 
@@ -73,3 +82,9 @@ form.addEventListener("submit", () => {
 
 displayBooks(myLibrary);
 
+//addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 1, false);
+//addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 2, false);
+//addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 3, false);
+//addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 4, false);
+//addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 5, false);
+//addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 6, false);

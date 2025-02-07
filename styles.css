@@ -33,8 +33,8 @@ body {
     margin-bottom: 15px;
 }
 
-button {
-    background-color: #f3f1ff;
+button, input[type="button"] {
+    background-color: #e0dcff;
     border: none;
     padding: 10px 40px;
     font-size: 24px;
@@ -42,7 +42,7 @@ button {
     width: 200px;
 }
 
-button:hover {
+button:hover, input[type="button"]:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: #d3cef3;
 }
@@ -69,4 +69,28 @@ form input[value="Close"] {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+dialog {
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #f3f2fd;
+    border-radius: 10px;
+    font-family: Helvetica;
+}
+
+dialog input[type="button"], dialog input[type="submit"] {
+    background-color: #e0dcff;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+dialog input[type="text"], dialog input[type="number"], dialog input[type="checkbox"] {
+    border: 2px solid #e0dcff;
+}
+
+dialog input[type="checkbox"] {
+    outline: 2px solid #e0dcff;
 }
