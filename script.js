@@ -82,9 +82,9 @@ form.addEventListener("submit", () => {
 
 displayBooks(myLibrary);
 // Test code
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 1, false);
-addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 2, false);
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 3, false);
-addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 4, false);
-addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 5, false);
-addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 6, false);
+// addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 1, false);
+// addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 2, false);
+// addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 3, false);
+// addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 4, false);
+// addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 5, false);
+// addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 6, false);
