@@ -52,7 +52,7 @@ function displayBooks(lib) {
         const del = document.createElement("input");
         del.type = "button";
         del.value = "Delete book";
-        container.classList.add(i);
+        del.classList.add(i);
         del.addEventListener("click", function(element) {
             myLibrary.splice(this.classList[0], 1);
             displayBooks(myLibrary);
@@ -81,10 +81,10 @@ form.addEventListener("submit", () => {
 });
 
 displayBooks(myLibrary);
-
-//addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 1, false);
-//addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 2, false);
-//addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 3, false);
-//addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 4, false);
-//addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 5, false);
-//addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 6, false);
+// Test code
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 1, false);
+addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 2, false);
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 3, false);
+addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 4, false);
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 5, false);
+addBookToLibrary("Lord of the Rings", "J.R.R. Tolkien", 6, false);
